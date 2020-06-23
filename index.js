@@ -15,7 +15,7 @@ server.use((err, _, res, next) => {
   res.status(err.status || 500).json(err);
 });
 
-server.listen(process.env.PORT, (err) => {
+server.listen(process.env.PORT || 8888, (err) => {
   if (err) {
     console.log("[webserver] Failed to start :(");
     throw err;
