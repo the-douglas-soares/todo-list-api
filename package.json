@@ -1,11 +1,11 @@
 {
-  "name": "show-do-milhao-api",
+  "name": "todo-list-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run migration:up && node -r dotenv/config index.js",
+    "test": "echo \"Error: no test specified\"",
+    "start": "npm run migration:up && node index.js",
     "migration:create": "knex migrate:make",
     "migration:up": "knex migrate:latest",
     "migration:down": "knex migrate:rollback"
