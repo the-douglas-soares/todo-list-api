@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node -r dotenv/config index.js",
+    "start": "npm run migration:up && node -r dotenv/config index.js",
     "migration:create": "knex migrate:make",
     "migration:up": "knex migrate:latest",
     "migration:down": "knex migrate:rollback"
