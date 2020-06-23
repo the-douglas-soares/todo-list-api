@@ -53,7 +53,7 @@
     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjgsImlhdCI6MTU5Mjg3MTg2NX0.cCKe6GsxW1w347Kd0mxuQCaVwwg7tOQ5-gsbdsjljns"
 }
 ```
-## Usuário
+## Tarefas
 
 ### POST /tasks
 
