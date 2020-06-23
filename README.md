@@ -53,12 +53,16 @@
     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjgsImlhdCI6MTU5Mjg3MTg2NX0.cCKe6GsxW1w347Kd0mxuQCaVwwg7tOQ5-gsbdsjljns"
 }
 ```
+## Usuário
 
 ### POST /tasks
+
 #### Headers
+
 ```
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjgsImlhdCI6MTU5Mjg3MTg2NX0.cCKe6GsxW1w347Kd0mxuQCaVwwg7tOQ5-gsbdsjljns
 ```
+
 #### Payload
 
 ```
@@ -86,9 +90,11 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjgsImlhd
 ### GET /tasks
 
 #### Headers
+
 ```
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjgsImlhdCI6MTU5Mjg3MTg2NX0.cCKe6GsxW1w347Kd0mxuQCaVwwg7tOQ5-gsbdsjljns
 ```
+
 #### Resposta
 
 `200 OK`
@@ -115,10 +121,13 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjgsImlhd
 ```
 
 ### PUT /tasks/:id
+
 #### Headers
+
 ```
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjgsImlhdCI6MTU5Mjg3MTg2NX0.cCKe6GsxW1w347Kd0mxuQCaVwwg7tOQ5-gsbdsjljns
 ```
+
 #### Payload
 
 `200 OK`
