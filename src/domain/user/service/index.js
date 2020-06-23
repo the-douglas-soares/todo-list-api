@@ -5,7 +5,7 @@ exports.create = (user) => {
   return repository.create(user);
 };
 
-exports.getById = (id) => {
+exports.getById = async (id) => {
   const user = await repository.getById(id);
   if(!user.id){
     throw { status: 404, message: "Usuário não encontrado" };
