@@ -2,9 +2,10 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const routes = require("./src/core/routes");
 const morgan = require("morgan");
+const cors = require('cors');
 
 const server = express();
-
+server.use(cors())
 server.use(bodyParser.json());
 server.use(morgan("tiny"));
 server.use(routes);
