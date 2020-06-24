@@ -27,9 +27,6 @@ async function create(req, res) {
 async function update(req, res) {
   try {
     const task = new Task(req.body);
-    if (!task.description) {
-      throw { status: 400, message: "Descrição Inválida" };
-    }
     const updated = await service.update(req.userId, req.params.id, task);
     res.status(200).json(updated);
   } catch (e) {
