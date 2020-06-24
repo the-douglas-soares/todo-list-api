@@ -1,5 +1,8 @@
 module.exports = (res, error) => {
-  return res
-    .status(error.status || 500)
-    .json(error.status ? error : { status: 500, message: error.message });
+  const status = error.status || 500;
+  const errorJson = error.status
+    ? error
+    : { status: 500, message: error.message };
+  console.log("Erro", status, errorJson);
+  return res.status(status).json(errorJson);
 };
