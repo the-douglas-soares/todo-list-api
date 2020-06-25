@@ -11,7 +11,7 @@ async function create(req, res) {
   try {
     const user = new User(req.body);
     if (!validateEmail(user.email)) {
-      throw { status: 400, message: "Email Inválido" };
+      throw { status: 400, message: `Email Inválido ${user.email}` };
     }
     const created = await service.create(user);
     res.status(201).json(created);
@@ -24,7 +24,7 @@ async function login(req, res) {
   try {
     const { email } = req.body;
     if (!validateEmail(email)) {
-      throw { status: 400, message: "Email Inválido" };
+      throw { status: 400, message: `Email Inválido ${user.email}` };
     }
     const loginResult = await service.login(email);
     res.status(200).json(loginResult);
